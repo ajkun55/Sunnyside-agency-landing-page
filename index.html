@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:ital,opsz,wght@0,9..144,900;1,9..144,900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="styles.css">
+  <script src="index.js"></script>
+</head>
+
+<body>  
+  <main>
+  
+  <section class="hero_section">
+    <div class="brand">
+      <h2 class="logo">Sunnyside</h2>
+      <nav class="nav_list barlow-semibold">
+        <ul>
+          <li class="nav_item"><a href="">About</a></li>
+          <li class="nav_item"><a href="">Services</a></li>
+          <li class="nav_item"><a href="">Projects</a></li>
+          <li class="nav_item"><a href=""> <button class="contact fraunces-900">Contact</button></a></li>          
+        </ul>
+      </nav>
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu barlow-semibold">
+          <li class="nav_item"><a href="">About</a></li>
+          <li class="nav_item"><a href="">Services</a></li>
+          <li class="nav_item"><a href="">Projects</a></li>
+          <li class="nav_item"><a href=""> <button class="contact fraunces-900">Contact</button></a></li>
+        </ul>
+      </div>
+      <span class="hamburger-menu  material-symbols-outlined">menu</span>
+    </div>
+    <div class="header">
+      <h1 class="fraunces-900">We are creatives</h1>
+      <img src="images/icon-arrow-down.svg" alt="">
+    </div>
+  </section>
+
+  <section class="img_section">
+
+    <div class="text1">
+      <div class="imgtitle">
+        <h2 class="fraunces-700">Transform your brand</h2>
+      </div>
+      <p class="description">
+        We are a full-service creative agency specializing in helping brands grow fast. 
+        Engage your clients through compelling visuals that do most of the marketing for you.
+      </p>   
+      <div class="more yellow fraunces-700">Learn more</div>    
+    </div>
+
+    <div class="img1">
+      <img src="images/desktop/image-transform.jpg" alt="">
+    </div>
+
+    <div class="img2">
+      <img src="images/desktop/image-stand-out.jpg" alt="">
+    </div>
+
+    <div class="text2">
+      <div class="imgtitle">
+        <h2 class="fraunces-700">Stand out to the right audience</h2>
+      </div>
+      <div class="description">
+        Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+      </div>   
+      <div class="more red fraunces-700">Learn more</div>    
+    </div>
+    
+    <div class="img3">
+      <h3 class="imgsubtitle fraunces-700">Graphic design</h3>
+      <p class="subdescription">
+        Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+      </p>
+       
+    </div>
+
+    <div class="img4">
+      <h3 class="imgsubtitle fraunces-700">Photography</h3>
+      <p class="subdescription">
+        Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+      </p>     
+      
+    </div> 
+  
+  </section>
+
+  <section class="quote_section">
+    <h4 class="quote_title fraunces-700">Client testimonials</h4>
+    <div class="quote">
+      <div class="quote1">
+        <img class="avatar" src="images/image-emily.jpg" alt="">
+        <p class="saying">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+    </p>
+        <p class="people fraunces-700">Emily R.</p>
+        <p class="job">Marketing Director</p>
+      </div>
+
+      <div class="quote2">
+        <img class="avatar" src="images/image-thomas.jpg" alt="">
+        <p class="saying">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
+    </p>
+        <p class="people fraunces-700">Thomas S.</p>
+        <p class="job">Chief Operating Officer</p>
+      </div>
+
+      <div class="quote3">
+        <img class="avatar" src="images/image-jennie.jpg" alt="">
+        <p class="saying">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+    </p>
+        <p class="people fraunces-700">Jennie F.</p>
+        <p class="job">Business Owner</p>  
+      </div>
+    </div>  
+  </section>
+
+  <section class="pics_section">
+    <div class="pic1">
+      <img src="images/desktop/image-gallery-milkbottles.jpg" alt="">
+    </div>
+    <div class="pic2">
+      <img src="images/desktop/image-gallery-orange.jpg" alt="">
+    </div>
+    <div class="pic3">
+      <img src="images/desktop/image-gallery-cone.jpg" alt="">
+    </div>
+    <div class="pic4">
+      <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="">
+    </div>
+  </section>   
+  
+    
+  </div>
+
+</main>
+
+<footer>
+  <h3 fraunces-700>Sunnyside</h3>
+  <div class="fonav">
+    <div class="fo">About</div>
+    <div class="fo">Services</div>
+    <div class="fo">Projects  </div>
+  </div>
+  <div class="icon">
+    <img src="images/icon-facebook.svg" alt=""></img>
+    <img src="images/icon-instagram.svg" alt=""></img>
+    <img src="images/icon-twitter.svg" alt=""></img>
+    <img src="images/icon-pinterest.svg" alt=""></img>
+  </div>
+  
+</footer>  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/ajkun55/">John A</a>.
+  </div>
+</body>
+</html>

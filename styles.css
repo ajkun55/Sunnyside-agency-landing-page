@@ -55,32 +55,34 @@ body{
 }
 .brand h2{
     color: var(--clr-white); font-size: var(--fs-600);padding: 2rem 1.5rem;
+    position: absolute; top: 0.5rem;left: 1rem;
 }
 .nav_list { 
     float: right;
-    width: 36%;
-    margin: 0;
-    padding: 0;margin-left: auto;
+    width: auto;
+    margin-left: auto;
     list-style: none;
 }
 .nav_list ul {
     list-style-type: none;
     padding-left: 0;
+    gap: 1rem;
+    width: 20rem;display: flex;flex-direction: row;justify-content: flex-end;
   }
-.nav_item {
-    padding: 2rem 1.5rem;
-    display: inline-block; 
+.nav_item {    
+    padding: 2rem 0.5rem;
     zoom: 1; 
 }
 .nav_item a{
-    text-decoration: none;
+    text-decoration: none; 
     color: white;
 }
 .contact{
     background-color: white;
     border-radius: 3rem;
     height: 3rem;
-    width: 8rem;
+    width: 8rem;position: relative;
+    bottom: 25%;
     border: none;
     font-size: var(--fs-400);
 }
@@ -91,20 +93,19 @@ body{
     display: none; /* Hidden by default for larger screens */
     cursor: pointer;
 }
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 .mobile-menu {
     display: none;
     position: absolute;
-    top: 50px;
-    left: 2rem;
+    top: 50px;list-style: none;
+    right: 2rem;
     height: 15rem;
-    width: 80%;
+    width: 13rem;
     background-color: var(--clr-white);
   }
   #hamburger-icon {
-    margin: auto 0;
     display: none;
-    cursor: pointer;
+    margin: auto 0;   
+    cursor: pointer;position: absolute;top: 0.5rem;right: 0.5rem;
   }
   
   #hamburger-icon div {
@@ -133,7 +134,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;color: var(--clr-vdgrayblue);
+    justify-content: flex-start;color: var(--clr-vdgrayblue);
   }
   
   .mobile-menu li {
@@ -147,7 +148,7 @@ body{
     #hamburger-icon {
       display: block;
     }
-    .nav_item{padding: 0.7rem 0;}
+    .nav_item{padding: 1rem 0;}
     .nav_item a{color: var(--clr-vdgrayblue);font-size: 0.85rem;}
     .contact{background-color: var(--clr-yellow);
         text-transform: uppercase;font-size: 0.9rem;}
@@ -160,27 +161,22 @@ h1{
 .header h1{
     display: flex;
     justify-content: center;
-    margin-top: 2rem;
-    margin-bottom: 4rem;      
+    margin-top: 6rem;        
     color: white;
+    text-transform: uppercase;
 }
 .header img{  
     display: flex;
     justify-content: center;
-    margin: 2rem auto;  
-    height: 4rem;
+    margin: 4rem auto;  
+    height: 6rem;
 }
 .hero_section{
     background-image: url(images/desktop/image-header.jpg);  
     background-repeat:no-repeat;
     background-size:cover;
-    background-position:center;  
-    min-height: 40rem;  
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 4fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    background-position:center center;     
+    min-height: 800px;width: 100%;
 }   
 
 
@@ -320,15 +316,16 @@ footer h3{
     background-color: var(--clr-white);cursor:grab;
 }
 
-@media(width < 700px){
+@media(width < 600px){
     body{
         height: auto;font-size: 13px;background-color: white;
-        --fs-900:3rem;--fs-400:1.1rem; --fs-600:1.3rem;
+        --fs-900:2rem;--fs-400:1.1rem; --fs-600:1.3rem;
     }
-    .hero_section{
-        display: flex;
-        flex-direction: column;
-    }
+    .hero_section{       
+        width: 100%;height:auto;background-size: cover;
+    }    
+    .header h1{margin-top: 10rem;}
+    .header img{margin-top: 9rem;}
     .img_section{
         width: 100%; margin: 0;height: auto;
         display: flex;flex-direction: column;
